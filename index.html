@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Twitch.TV Videos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./src/imgs/twitch.png"/>
+        <link rel="shortcut icon" type="image/png" href="./src/imgs/twitch.png"/>
+        <link rel="stylesheet" href="./src/css/twitch.css">
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="search">
+                <input type="input" id='q' name="q" placeholder="Search Query" />
+                <input type="submit" id='search' value="search" />
+            </div>
+        </div>
+        <div class="results">
+            <div class="small info" id='navigation_help'>
+                Use your ← → (arrow) keys to navigate between pages
+            </div>
+            <div class="videos_box">
+                <div class="subheader">
+                    <div id="count" class="total_count"></div>
+                    <div id="pagination" class="pagination"></div>
+                </div>
+                <div id="video_results"></div>
+                <div id="bottom_pagination" class="pagination"></div>
+
+            </div>
+        </div>
+        <script src="twitch.min.js"></script>
+
+    </body>
+</html>
