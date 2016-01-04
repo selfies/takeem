@@ -1,0 +1,15 @@
+{
+  "name": "sony",
+  "version": "1.0.0",
+  "description": "twitch search interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/uglifyjs src/js/helpers.js src/js/url.js src/js/ajax.js src/js/pagination.js src/js/search.js src/js/dom.js -c -m -o twitch.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
+}
